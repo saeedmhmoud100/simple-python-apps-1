@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Wheel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-14 11:49:28 PM"/>
+        <attribute name="created" value="V2hlZWw7Q0xPQ0tXSVNFOzIwMjItMTEtMTQ7MTE6MzM6NDIgUE07MjQ0OA=="/>
+        <attribute name="edited" value="V2hlZWw7Q0xPQ0tXSVNFOzIwMjItMTEtMTQ7MTE6NDk6MjggUE07MjsyNTY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LOW, HIGH, SUM, N" type="Integer" array="False" size=""/>
+            <input variable="LOW"/>
+            <input variable="HIGH"/>
+            <assign variable="N" expression="(HIGH-LOW)"/>
+            <assign variable="SUM" expression="(N / 2) * (LOW + HIGH)"/>
+            <output expression="SUM" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

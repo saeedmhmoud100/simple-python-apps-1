@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Wheel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-26 04:37:13 PM"/>
+        <attribute name="created" value="V2hlZWw7Q0xPQ0tXSVNFOzIwMjItMTEtMjY7MDQ6MDE6MDYgUE07MjQ0OA=="/>
+        <attribute name="edited" value="V2hlZWw7Q0xPQ0tXSVNFOzIwMjItMTEtMjY7MDQ6Mzc6MTMgUE07MjsyNTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="h1, m1, s1, h2, m2, s2, tmp, tmp2, ansh, ansm, anss" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter first time: &quot;" newline="True"/>
+            <input variable="h1"/>
+            <input variable="m1"/>
+            <input variable="s1"/>
+            <output expression="&quot;Enter second time: &quot;" newline="True"/>
+            <input variable="h2"/>
+            <input variable="m2"/>
+            <input variable="s2"/>
+            <assign variable="tmp" expression="0"/>
+            <if expression="s2 &lt; s1">
+                <then>
+                    <assign variable="anss" expression="s1-s2"/>
+                </then>
+                <else>
+                    <assign variable="anss" expression="s1-s2+60"/>
+                    <assign variable="tmp" expression="1"/>
+                </else>
+            </if>
+            <assign variable="tmp2" expression="0"/>
+            <if expression="m1&gt;m2">
+                <then>
+                    <assign variable="ansm" expression="m1 - m2"/>
+                </then>
+                <else>
+                    <assign variable="ansm" expression="m1-m2+60"/>
+                    <assign variable="tmp2" expression="1"/>
+                </else>
+            </if>
+            <assign variable="ansm" expression="ansm-tmp"/>
+            <assign variable="ansh" expression="h1-h2-tmp2"/>
+            <output expression="ansh &amp; &quot;:&quot;" newline="False"/>
+            <output expression="ansm &amp; &quot;:&quot;" newline="False"/>
+            <output expression="anss &amp; &quot; &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
